@@ -6,19 +6,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autoriai ir posakiai</title>
-</head>
+    <meta property=”og:url” content=”h” />
 
-<body>
-<!DOCTYPE html>
-<html lang="en">
+<meta property="og:title" content="Kontentas" />
+<meta property="og:type" content="tipas" />
+<meta property="og:image" content="https://en.wikipedia.org/wiki/Mountain#/media/File:Monasterio_Khor_Virap,_Armenia,_2016-10-01,_DD_25.jpg" />
 
-<head>
-    <link rel="stylesheet" href="/css/main.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Autoriai ir posakiai</title>
+
 </head>
 
 <body>
@@ -27,19 +23,23 @@
             <ul>
                 <li>
                     <a href="next.html">Kitas</a>
-                </li>                <li>
+                </li>
+                <li>
                     <a href="next.html">Kitas</a>
-                </li>                <li>
+                </li>
+                <li>
                     <a href="next.html">Kitas</a>
-                </li>                <li>
+                </li>
+                <li>
                     <a href="next.html">Kitas</a>
                 </li>
             </ul>
-            
+
         </nav>
+    </header>
     <section>
-        
-            <h1>Lists</h1>
+
+        <h1>Lists</h1>
         <h2>Students lists</h2>
         <ul>
             <li>Pirmas</li>
@@ -75,37 +75,43 @@
                 <td>November 29, 1910</td>
             </tr>
             </tr>
-                <td>3</td>
-                <td>Balys Sruoga</td>
-                <td>February 2, 1896</td>
+            <td>3</td>
+            <td>Balys Sruoga</td>
+            <td>February 2, 1896</td>
             </tr>
         </table>
     </section>
     <section>
         <h1>Forms</h1>
-            <form   method="GET" >
-                <input type="hidden" name="ID" value="123456879">
-                <label>Vardas:</label> <br>
-                <input type="text" name="Name" placeholder="Type your name" required> <br>
-                <label>Pavarde:</label> <br>
-                <input type="text" name="Last name" placeholder="Type your Last name" required> <br>
-                <label>Amzius</label>
-                <input type="number" name="Amzius" placeholder="Type your age"required MIN=0 max=121> <br>
-                <Label>Slpatazodis</Label> <br>
-                <input type="password" name="pwd" placeholder="Type your Password"> <br>
-                <label > Email</label> <br>
-                <input type="email" name="ëmail" placeholder="Type your email"> <br>
-                <label for="">Payment Meyhod</label> <br>
-                <select name="pay">
+        <form method="GET">
+            <input type="hidden" name="ID" value="123456879">
+            <label>Vardas:</label> <br>
+            <input type="text" name="Name" placeholder="Type your name" required> <br>
+            <label>Pavarde:</label> <br>
+            <input type="text" name="Last name" placeholder="Type your Last name" required> <br>
+            <label>Amzius</label>
+            <input type="number" name="Amzius" placeholder="Type your age" required MIN=0 max=121> <br>
+            <Label>Slpatazodis</Label> <br>
+            <input type="password" name="pwd" placeholder="Type your Password"> <br>
+            <label> Email</label> <br>
+            <input type="email" name="ëmail" placeholder="Type your email"> <br>
+            <label for="">Payment Meyhod</label> <br>
+            <select name="pay">
+                <option value="default" selected disabled>Pasirinkti</option>
+                <optgroup label="Pirma">
                     <option value="Cash">Gryni</option>
                     <option value="Card">Card</option>
+                </optgroup>
+
+                <optgroup label="Antra">
                     <option value="Loan">Loan</option>
                     <option value="None">None</option>
-                </select><br>
-                <label for="">Do you agree</label><br>
-                <input type="checkbox" value="on" required name="AGgrement"><br>
-                <input type="supmit" > 
-            </form>
+                </optgroup>
+            </select><br>
+            <label for="">Do you agree</label><br>
+            <input type="checkbox" value="on" required name="AGgrement"><br>
+            <input type="supmit">
+        </form>
 
 
     </section>
@@ -115,5 +121,5 @@
 
 
 </body>
- 
+
 </html>
