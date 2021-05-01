@@ -2,115 +2,45 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="/css/main.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property=”og:url” content=”h” />
-
-    <meta property="og:title" content="Kontentas" />
-<meta property="og:description" content="Aprasas" />
-<meta property="og:url" content="Kontentas" />
-<meta property="og:image" content="https://i.imgur.com/VcFRiej.jpg" />
-
-<meta property="description" content="Vilius J">
-
-<meta property="title" content="Vilius">
-
-    <title>Title</title>
-    <style>
-        .nav ul {
-    *zoom:1;
-    list-style:none;
-    margin:0;
-    padding:0;
-    background:#333;
-}
-.nav ul:before,.nav ul:after {
-    content:"";
-    display:table;
-}
-.nav ul:after {
-    clear:both;
-}
-.nav ul > li {
-    float:left;
-    position:relative;
-}
-.nav a {
-    display:block;
-    padding:10px 20px;
-    line-height:1.2em;
-    color:#fff;
-    border-left:1px solid #595959;
-}
-.nav a:hover {
-    text-decoration:none;
-    background:#595959;
-    border-radius: 50px;
-    
-}
-.nav li ul {
-    background:#273754;
-    
-}
-.nav li ul li {
-    width:200px;
-    
-}
-.nav li ul a {
-    border:none;
-}
-.nav li ul a:hover {
-    background:rgba(0,0,0,0.2);
-    
-}
-
-.nav li ul {
-    position:absolute;
-    left:0;
-    top:36px;
-    z-index:1;
-    visibility:hidden;
-    opacity:0;
-    filter:alpha(opacity=0);
-    -webkit-transition:200ms ease;
-    -moz-transition:200ms ease;
-    -o-transition:200ms ease;
-    transition:200ms ease;
-}
-.nav ul > li:hover ul {
-    visibility:visible;
-    opacity:1;
-    filter:alpha(opacity=100);
-}
-    </style>
-
-
+    <title>Document</title>
 </head>
 
-<body>
-    <nav class="nav">
-        <ul>
-            <li>
-                <a href="#">Nav Item</a>
-                <ul>
-                    <li><a href="#">Subnav Item</a></li>
-                    <li><a href="#">Subnav Item</a></li>
-                    <li><a href="#">Subnav Item</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Nav Item</a>
-                <ul>
-                    <li><a href="#">Subnav Item</a></li>
-                    <li><a href="#">Subnav Item</a></li>
-                    <li><a href="#">Subnav Item</a></li>
-                </ul>
-            </li>
-        </ul>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+        body {
+            margin: 2rem;
+        }
+        nav {
+            border-bottom: 2px solid #ff0000;
+            margin: inherit;
+            display: flex;
+            justify-content: space-around;
+        }
+        div {
+            border-bottom: 2px solid transparent;
+            display: inline-block;
+            font-family: Zen Dots;
+            text-align: justify;
+            font-size: 20px;
+            font-weight: bold;
+            margin: inherit;
+            padding: 1rem;
+            transition: all 2s ease-in-out ;
+        }
+        div:hover {
+            border-bottom: 2px solid #ff0000;
+            
+
+            
+        }
+    </style>
+    <nav>
+        <div>Home</div>
+        <div>About</div>
+        <div>News</div>
     </nav>
-  
-</body>
 
 </html>
