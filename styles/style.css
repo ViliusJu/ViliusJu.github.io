@@ -1,56 +1,179 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/styles/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TheRealTravel</title>
-</head>
-<body>
-    <header id="header">
-        <div class="flex-container-1">
-            <a href="#city" class="nav_link">Explore the city</a>
-            <a href="#nature" class="nav_link">Experience the nature</a>
-            <a href="#people" class="nav_link">Meet the people</a>
-            <a href="#food" class="nav_link">Taste the Food</a>
-        </div>
-        <div class="flex-container-1">
-            <h1 class="quote">“The world is a book and those who do not travel read only one page.”</h1>
-            <h2 class="quote">Saint Augustine</h2>
-        </div>
-    </header>
-    <div class="back_to_top_btn_wrapper">
-        <div class="back_to_top_btn">
-            <a href="#header">&#8593;</a>
-        </div>
-    </div>
-    </section>
-    <section id="city">
-        <p>
-            "Stand on a bridge over the Arno river several times in a day and the light, mood and view changes every
-            time. Firenze is magnetic, romantic and busy."
-        </p>
-        <h2>Lonely Planet</h2>
-    </section>
-    <section id="nature">
-        <p>
-            "We don’t inherit the earth from our ancestors, we borrow it from our children."
-        </p>
-        <h2>Native American proverb</h2>
-    </section>
-    <section id="people">
-        <p>
-            “A journey is best measured in friends, rather than miles.”
-        </p>
-        <h2>Tim Cahill</h2>
-    </section>
-    <section id="food">
-        <p>
-            "Ask not what you can do for your country. Ask what’s for lunch."
-        </p>
-        <h2>Orson Welles</h2>
-    </section>
-</body>
-</html>
+/*Reset*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600&display=swap");
+
+body {
+  font-family: "Teko", sans-serif;
+}
+
+.flex-container-1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header {
+  background-image: url("https://images.pexels.com/photos/2859169/pexels-photo-2859169.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  height: 100vh;
+  background-size: cover;
+}
+
+.nav_link {
+  padding: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgb(214, 70, 70);
+  transition: all 1s ease;
+  font-size: 1.5rem;
+}
+
+.quote {
+  font-weight: 500;
+  color: #333;
+  font-size: 2.5rem;
+  background-color: rgb(242, 242, 242);
+  padding: 0rem;
+}
+
+h1.quote {
+  margin-top: 10rem;
+}
+
+h2.quote {
+  margin-top: 35rem;
+}
+
+.nav_link:hover {
+  font-weight: 800;
+}
+
+#city {
+  background-image: url("https://images.pexels.com/photos/4179480/pexels-photo-4179480.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  height: 100vh;
+  background-size: cover;
+}
+#nature {
+  background-image: url("https://images.pexels.com/photos/951076/pexels-photo-951076.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  height: 100vh;
+  background-size: cover;
+}
+#people {
+  background-image: url("https://images.pexels.com/photos/4430309/pexels-photo-4430309.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  height: 100vh;
+  background-size: cover;
+}
+#food {
+  background-image: url("https://images.pexels.com/photos/1105325/bbq-meet-eating-diner-1105325.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  height: 100vh;
+  background-size: cover;
+}
+
+#city > p,
+#nature > p,
+#people>p,
+#food>p {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2;
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  padding-top: 2rem;
+  background-color: rgba(215, 219, 221, 0.378);
+}
+
+#city > h2,
+#nature > h2,
+#people > h2,
+#food > h2 {
+  text-align: right;
+  font-size: 1.5rem;
+  padding-right: 5rem;
+  background-color: rgba(215, 219, 221, 0.378);
+}
+
+
+
+.back_to_top_btn_wrapper {
+    margin: 10rem 5rem 0 0;
+    position: sticky;
+    top: calc(100vh - 5rem);
+    float: right;
+
+}
+
+.back_to_top_btn>a{
+    font-size: 2.5rem;
+    text-decoration: none;
+    font-weight: 900;
+    padding: .5rem 1.5rem;
+    background-color:  rgba(41, 43, 44, 0.604);
+    color: #fff;
+    border-radius: 100%;
+    border: solid 2px #000;
+    transition: linear all .5s;
+}
+
+.back_to_top_btn>a:hover {
+
+    color: rgb(201, 96, 26);
+    background-color:#fff;
+    padding: 1rem 2rem;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+
