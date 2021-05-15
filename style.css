@@ -1,0 +1,406 @@
+/*Reset*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600&display=swap");
+
+body {
+  font-family: "Teko", sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-container-1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-container-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.flex-item {
+  padding: 5rem 5rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 5rem;
+  grid-column-gap: 5rem;
+}
+.grid-container-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 2rem;
+  
+}
+
+header {
+  background: #777;
+  height: 5vh;
+}
+
+header > img {
+  height: 33%;
+  width: 33%;
+}
+
+header > h2,
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: ease-in-out color 1s;
+}
+
+header > h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.navCurrent {
+  color: rgb(223, 213, 80);
+  font-weight: 800;
+}
+.navLink:hover {
+  color: rgba(218, 117, 117, 0.85);
+  font-weight: 800;
+}
+
+main {
+  height: 90vh;
+}
+#face,
+#skills {
+  width: 50%;
+  height: 90vh;
+}
+
+#face {
+  background-color: #eeeeee;
+}
+
+#face > img {
+  margin: 5rem auto;
+  display: block;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+}
+
+#face > h1 {
+  margin: 5rem 0;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #333333;
+  margin: 2.5rem auto;
+  text-align: center;
+}
+
+#face > h2 {
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: #cccccc;
+  margin: 5rem auto;
+  text-align: center;
+}
+
+footer {
+  height: 5vh;
+  background-color: #696969;
+  text-align: center;
+  color: #ebebeb;
+}
+
+#skills {
+  background-color: #dddddd;
+}
+
+#skills h2 {
+  text-align: center;
+  height: 3rem;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+#skills i {
+  font-size: 7rem;
+  color: #777;
+  text-align: center;
+ 
+}
+
+#skills i:hover {
+  color: #fff;
+  transition: color ease-in-out 0.5s;
+}
+
+.title {
+  text-align: center;
+  background-color: #ebebeb;
+  color: #696969;
+  line-height: 2rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+#education > div:nth-child(odd) {
+  background-color: #cccccc;
+}
+
+#education {
+  background-color: #eeeeee;
+}
+
+#education i,
+#work i,
+#course i {
+  color: #696969;
+  font-size: 2.5rem;
+  padding: 0.5rem;
+  background-color: #cccccc;
+  border-radius: 50%;
+}
+
+#education > div > h2,
+#work > div > h2,
+#course > div > h2 {
+  margin: 2rem 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+#education > div > h3,
+#work > div > h3,
+#course > div > h3 {
+  margin: 1rem 0;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+#work > div:nth-child(odd) {
+  background-color: #eeeeee;
+}
+
+#work{
+  background-color: #bbbbbb
+}
+
+#course > div:nth-child(odd) {
+  background-color: #cccccc;
+}
+
+#course {
+  background-color: #eeeeee;
+}
+
+.project-title{
+text-align: center;
+font-size: 1.5rem;
+font-weight: 700;
+line-height: 2.5rem;
+color: #696969;
+background-color: #bbbbbb;
+
+
+}
+
+.project-img{
+  height: 20rem;
+  width: 20rem;
+  display: block;
+  margin: auto;
+  background-color: #777;
+ 
+}
+
+.project-link{
+  display:block;
+  padding: .5rem 0;
+  background-color: #cccccc;
+  color:#777;
+  font-weight: 500;
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.grid-item{
+  background-color: #242222;
+}
+
+.project-link:hover{
+ 
+  background-color: #777;
+  color:#cccccc;
+  transition: ease-in-out all 1s;
+
+}
+
+
+.contact{
+  text-align: center;
+ 
+
+}
+
+.contact > span{
+  color: #333333;
+  font-weight: 500;
+  font-size: 1.5rem;
+  background-color: #bbbbbb;
+  padding: 1rem;
+  border-radius: 15px;
+}
+.contact > span:hover{
+  
+  padding-left: 2rem;
+  transition: ease-in-out .5s all;
+}
+
+
+
+
+
+
