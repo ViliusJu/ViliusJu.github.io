@@ -1,56 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TheRealTravel</title>
+    <title>The page about me</title>
 </head>
+
 <body>
-    <header id="header">
-        <div class="flex-container-1">
-            <a href="#city" class="nav_link">Explore the city</a>
-            <a href="#nature" class="nav_link">Experience the nature</a>
-            <a href="#people" class="nav_link">Meet the people</a>
-            <a href="#food" class="nav_link">Taste the Food</a>
-        </div>
-        <div class="flex-container-1">
-            <h1 class="quote">“The world is a book and those who do not travel read only one page.”</h1>
-            <h2 class="quote">Saint Augustine</h2>
-        </div>
+    <header class="flex-container-1">
+        <h2 class="logo">This page about me</h2>
+       <!--
+           For future mobile use
+        <img src="/img/Burger_menu.png" alt="">--->
+        <a href="#" class="navCurrent">Home</a>
+        <a href="/expierence.html" class="navLink">My Experience</a>
+        <a href="/portfolio.html" class="navLink">My Protfolio</a>
+        <a href="/contact.html" class="navLink">Contact Me</a>
+
     </header>
-    <div class="back_to_top_btn_wrapper">
-        <div class="back_to_top_btn">
-            <a href="#header">&#8593;</a>
+    <main class="flex-container-1">  
+        <div id="face">
+            <img src="/img/person.jpg" alt="The guy">
+            <h1>John Doe</h1>
+            <h2> Unemployed</h2>
         </div>
-    </div>
-    </section>
-    <section id="city">
-        <p>
-            "Stand on a bridge over the Arno river several times in a day and the light, mood and view changes every
-            time. Firenze is magnetic, romantic and busy."
-        </p>
-        <h2>Lonely Planet</h2>
-    </section>
-    <section id="nature">
-        <p>
-            "We don’t inherit the earth from our ancestors, we borrow it from our children."
-        </p>
-        <h2>Native American proverb</h2>
-    </section>
-    <section id="people">
-        <p>
-            “A journey is best measured in friends, rather than miles.”
-        </p>
-        <h2>Tim Cahill</h2>
-    </section>
-    <section id="food">
-        <p>
-            "Ask not what you can do for your country. Ask what’s for lunch."
-        </p>
-        <h2>Orson Welles</h2>
-    </section>
+        <div id="skills" class="flex-container-2">
+            <h2>This my skills</h2>
+            <div class="grid-container" >
+                <i class="fa fa-html5" aria-hidden="true"></i>
+                <i class="fa fa-css3" aria-hidden="true"></i>
+                <i class="fa fa-github" aria-hidden="true"></i>
+                <i class="fa fa-database" aria-hidden="true"></i>
+                <i class="fa fa-stack-overflow" aria-hidden="true"></i>
+                <i class="fa fa-code" aria-hidden="true"></i>
+            </div>
+
+        </div>
+
+
+    </main>
+   <footer class="flex-container-1">
+       <h2>All right reserved</h2>
+       <h2>2021</h2>
+   </footer>
+
 </body>
-</html> 
+
+</html>
