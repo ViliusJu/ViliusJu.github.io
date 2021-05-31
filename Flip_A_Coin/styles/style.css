@@ -40,7 +40,7 @@ h2 {
 
 .coin .heads {
   /*background-color: skyblue;*/
-  background-image: url(/img/head.png);
+  background-image: url(/Flip_A_Coin/img/head.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -49,7 +49,7 @@ h2 {
 .coin .tails {
   /*   background-color: orange;*/
   transform: rotateY(-180deg);
-  background-image: url(/img/tails.png);
+  background-image: url(/Flip_A_Coin/img/tails.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
