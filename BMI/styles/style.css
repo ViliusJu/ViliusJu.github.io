@@ -1,0 +1,48 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+    width: 100vw;
+
+
+}
+
+.container {
+    width: 80vw;
+    background-color: rgb(238, 232, 232);
+   
+}
+
+.flexContainer{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.flexContainer input,
+.flexContainer span
+{
+   
+    width: 25vW;
+}
+
+
+button {
+   margin: auto;
+   display: block;
+   color: #fff;
+   background-color: rgb(50, 31, 220);
+   padding: .5rem .5rem;
+   font-weight: 500;
+}
+
+#result {
+    height: 2rem;
+  
+  
+}
+
+
+    
+
