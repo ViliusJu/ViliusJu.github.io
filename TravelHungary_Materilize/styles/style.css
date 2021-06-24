@@ -1,0 +1,73 @@
+:root {
+  --color-primary: #b9dfdb;
+  --color-secondary: #edf3f3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+.about {
+  margin-bottom: 40px;
+}
+
+.about h4 {
+  font-weight: 700;
+  margin-bottom: 80px;
+}
+
+.about__image img {
+  width: 300px;
+  margin: 0 auto;
+  height: 300px;
+}
+
+.destination {
+  padding-top: 40px;
+  padding-bottom: 80px;
+  background-color: var(--color-primary);
+}
+
+.destination h4 {
+  padding: 10px 0;
+  color: #fff;
+  font-weight: bold;
+}
+
+.testimonial {
+  padding: 40px 0;
+}
+
+.testimonial h4 {
+  margin-bottom: 40px;
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+.testimonial .carousel-item {
+  height: 50vh;
+  color: #fff;
+  padding: 5rem 0;
+  font-size: 1rem;
+}
+
+.copy {
+  height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=style.css.map */
